@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <title>calculo de la Resistencia</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ </head>
+ <script>
+ function operar()
+ {
+ var a1 = document.f1.a.value;
+ var b1 = document.f1.b.value;
+ var c1 = document.f1.c.value;
+ var d1 = document.f1.d.value;
+ var c1 = (parseFloat(a1)*parseFloat(b1))/100;
+ var d1 = parseFloat(a1)+parseFloat(b1);
+ document.f1.c.value=c1;
+ document.f1.d.value=d1;
+ }
+ </script>
+ <body>
+ <div class="container">
+ <h1>Calculo de la Resistencia </h1>
+ <form class="form-horizontal" name="f1" action="operaciones.html" role="form" method="POST">
+ <div class="form-group">
+ <label>banda 1:</label>
+ <input type="text" class="form-control" name="a" placeholder="b1">
+ </div>
+ <div class="form-group">
+ <label>banda 2:</label>
+ <input type="text" class="form-control" name="b" placeholder="b2">
+ </div>
+ <div class="form-group">
+    <label>banda 3:</label>
+    <input type="text" class="form-control" name="a" placeholder="b3">
+    </div>
+ <input type="Button" name="" value="Calcular" onclick="operar()" class="btn btn-primary">
+ <div class="form-group">
+ <label>valor de la resistencia :</label>
+ <input type="text" class="form-control" name="c" placeholder="Resultado ">
+ </div>
+ 
+ </form>
+ </div>
+
+ </body>
+</html>
