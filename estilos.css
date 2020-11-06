@@ -1,15 +1,27 @@
-h1 { color:red;
 
+
+   
+ .titulo{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }  
+
+.menu{
+    padding: 20;
+    background-color: dodgerblue;
+    width: 100;
 }
- h2{
-     color: seagreen;
-     font-family: Arial, Helvetica, sans-serif;
+
+
+.tabla{
+    width: 80;
+    margin: 60;
+}
+
+
+
+ .fuente_unad {
      
-         
- }
-
- .tabla {
-
-padding: 80px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
  
